@@ -36,6 +36,9 @@ public class TicTacToeAI : MonoBehaviour
 
 	public UnityEvent onGameStarted;
 
+	public Action onAIStartsMove;
+	public Action onAIFinishedMove;
+
 	//Call This event with the player number to denote the winner
 	public WinnerEvent onPlayerWin;
 

@@ -26,6 +26,8 @@ public class ClickTrigger : MonoBehaviour
 		_ai.onGameStarted.AddListener(() => SetInputEndabled(true));
 		_ai.onPlayerWin.AddListener((win) => SetInputEndabled(false));
 		//similar to player conditions, we need ai conditions as well
+		_ai.onAIStartsMove += () => SetInputEndabled(false);
+		_ai.onAIFinishedMove += () => SetInputEndabled(true);
 		
 	}
 
