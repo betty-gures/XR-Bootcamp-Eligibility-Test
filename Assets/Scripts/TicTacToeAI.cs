@@ -124,6 +124,8 @@ public class TicTacToeAI : MonoBehaviour
             if (state == TicTacToeState.cross)
             {
                 onPlayerWin.Invoke(0);
+                Invoke("stopGameAIWon", 0.2f);
+
             }
             else if (state == TicTacToeState.circle)
             {
