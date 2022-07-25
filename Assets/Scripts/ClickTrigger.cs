@@ -44,7 +44,7 @@ public class ClickTrigger : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (IsClicked==false)
+        if ((IsClicked==false)&&(Time.timeScale==1))
         {
             _ai.PlayerSelects(_myCoordX, _myCoordY);
             IsClicked = true;

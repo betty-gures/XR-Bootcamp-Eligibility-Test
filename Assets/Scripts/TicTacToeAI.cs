@@ -111,6 +111,10 @@ public class TicTacToeAI : MonoBehaviour
         onAITurnEnd?.Invoke();
     }
 
+    private void stopGameAIWon()
+    {
+        Time.timeScale = 0f;
+    }
     private void UpdateBoardState(int coordX, int coordY, TicTacToeState state)
     {
         boardState[coordX, coordY] = state;
@@ -124,6 +128,7 @@ public class TicTacToeAI : MonoBehaviour
             else if (state == TicTacToeState.circle)
             {
                 onPlayerWin.Invoke(1);
+                Invoke("stopGameAIWon",0.2f);
             }
             return;
         }
