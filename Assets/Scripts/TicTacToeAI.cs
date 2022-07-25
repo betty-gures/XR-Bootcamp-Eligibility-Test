@@ -201,23 +201,15 @@ public class TicTacToeAI : MonoBehaviour
                     mySquaresVertically[i]++;
                 }
 
-                if (boardState[j, i] == state || boardState[i, j] == state)
-                {
-                    if ((j == 1 && i == 1) ||
-                    (i == 0 && j == 0) ||
-                    (j == 2 && i == 2))
-                    {
-                        mydiaganolSquaresRight++;
-                    }
-                    else if ((j == 1 && i == 1) ||
-                        (i == 0 && j == 2) ||
-                        (j == 2 && i == 0))
-                    {
-                        mydiaganolSquaresLeft++;
-                    }
-                }
+                
             }
         }
+        if ((boardState[0, 2] == state) && (boardState[1, 1] == state) && (boardState[2, 0] == state))
+            mydiaganolSquaresLeft = 3;
+        if ((boardState[0, 0] == state) && (boardState[1, 1] == state) && (boardState[2, 2] == state))
+            mydiaganolSquaresRight = 3;
+
+
         for (int i = 0; i < 3; i++)
         {
             if (mySquaresHorizontally[i] == 3 || mySquaresVertically[i] == 3 || mydiaganolSquaresLeft == 3 || mydiaganolSquaresRight == 3)
@@ -225,6 +217,7 @@ public class TicTacToeAI : MonoBehaviour
                 return true;
             }
         }
+
         return false;
     }
     private ClickTrigger CheckForHorizontalWin()
