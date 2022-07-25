@@ -426,7 +426,7 @@ MonoBehaviour:
   _myCoordX: 2
   _myCoordY: 0
   canClick: 0
-  isMarked: 0
+  IsClicked: 0
 --- !u!65 &438058092
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -487,7 +487,7 @@ MonoBehaviour:
   _myCoordX: 1
   _myCoordY: 0
   canClick: 0
-  isMarked: 0
+  IsClicked: 0
 --- !u!65 &488615362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -548,7 +548,7 @@ MonoBehaviour:
   _myCoordX: 2
   _myCoordY: 1
   canClick: 0
-  isMarked: 0
+  IsClicked: 0
 --- !u!65 &498521339
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -754,7 +754,7 @@ MonoBehaviour:
   _myCoordX: 2
   _myCoordY: 2
   canClick: 0
-  isMarked: 0
+  IsClicked: 0
 --- !u!65 &704061768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   _myCoordX: 0
   _myCoordY: 1
   canClick: 0
-  isMarked: 0
+  IsClicked: 0
 --- !u!65 &869827074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1338,7 +1338,7 @@ MonoBehaviour:
   _myCoordX: 0
   _myCoordY: 0
   canClick: 0
-  isMarked: 0
+  IsClicked: 0
 --- !u!65 &933829468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1808,7 +1808,7 @@ MonoBehaviour:
   _myCoordX: 1
   _myCoordY: 1
   canClick: 0
-  isMarked: 0
+  IsClicked: 0
 --- !u!65 &1115226685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2001,7 +2001,7 @@ MonoBehaviour:
   _myCoordX: 0
   _myCoordY: 2
   canClick: 0
-  isMarked: 0
+  IsClicked: 0
 --- !u!65 &1300775588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   _myCoordX: 1
   _myCoordY: 2
   canClick: 0
-  isMarked: 0
+  IsClicked: 0
 --- !u!65 &1375841068
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2668,7 +2668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isPlayerTurn: 1
   _gridSize: 3
-  playerState: 2
+  playerState: 1
   _xPrefab: {fileID: 7414302633889650939, guid: a450fd114cd7d1a478caad21517a2ac9,
     type: 3}
   _oPrefab: {fileID: 7864686030223180920, guid: f4dc0bc95f6576a40a4d10ac0b905c6a,
