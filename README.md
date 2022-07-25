@@ -1,5 +1,7 @@
 ### Fatma Betül Güreş- Aplicant of XR Bootcamp
 
+Gameplay video: https://youtu.be/aFT4sN-T57I
+
 ![image](https://user-images.githubusercontent.com/60520606/159128296-733f12f0-7c50-4bbb-aa16-22c3c055d897.png)
 
 * This repostory has been made for **XR Bootcamp Eligibility Test**.
